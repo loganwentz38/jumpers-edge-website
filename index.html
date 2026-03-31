@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JUMPERS EDGE | Join The Kinetic Elite</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600;700&amp;family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed": "#fce047",
+              "secondary-fixed-dim": "#f7ba2f",
+              "surface-container-highest": "#262626",
+              "background": "#0e0e0e",
+              "surface-variant": "#262626",
+              "on-surface-variant": "#adaaaa",
+              "on-primary": "#516700",
+              "surface-bright": "#2c2c2c",
+              "outline": "#767575",
+              "primary-dim": "#beee00",
+              "on-tertiary-container": "#5d5000",
+              "tertiary": "#ffeea5",
+              "outline-variant": "#484847",
+              "tertiary-container": "#fce047",
+              "on-secondary-fixed-variant": "#694b00",
+              "primary": "#f3ffca",
+              "on-background": "#ffffff",
+              "error": "#ff7351",
+              "surface-container": "#1a1a1a",
+              "inverse-on-surface": "#565555",
+              "inverse-primary": "#516700",
+              "secondary-container": "#7b5900",
+              "surface-dim": "#0e0e0e",
+              "error-container": "#b92902",
+              "secondary-fixed": "#ffca5d",
+              "inverse-surface": "#fcf9f8",
+              "on-tertiary-fixed": "#483d00",
+              "on-tertiary": "#665800",
+              "surface-container-high": "#20201f",
+              "on-error": "#450900",
+              "on-secondary-container": "#fff6ed",
+              "secondary-dim": "#edb226",
+              "primary-fixed-dim": "#beee00",
+              "on-tertiary-fixed-variant": "#685900",
+              "secondary": "#fdbf35",
+              "on-primary-container": "#4a5e00",
+              "surface-container-lowest": "#000000",
+              "on-primary-fixed": "#3a4a00",
+              "primary-fixed": "#cafd00",
+              "surface": "#0e0e0e",
+              "on-error-container": "#ffd2c8",
+              "error-dim": "#d53d18",
+              "surface-tint": "#f3ffca",
+              "primary-container": "#cafd00",
+              "tertiary-fixed-dim": "#edd13a",
+              "on-secondary": "#573e00",
+              "tertiary-dim": "#edd13a",
+              "on-surface": "#ffffff",
+              "on-primary-fixed-variant": "#526900",
+              "surface-container-low": "#131313",
+              "on-secondary-fixed": "#453100"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Lexend"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-grid {
+            background-image: linear-gradient(45deg, transparent 48%, rgba(72, 72, 71, 0.15) 50%, transparent 52%);
+            background-size: 60px 60px;
+        }
+        .glass-overlay {
+            background: rgba(38, 38, 38, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(202, 253, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-fixed">
+<!-- TopNavBar Navigation Shell (Suppressed for focused Splash Page as per rules, but included if branding is required) -->
+<nav class="w-full top-0 left-0 z-50 flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+<div class="text-2xl font-black text-primary-fixed tracking-tighter font-headline">JUMPERS EDGE</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-headline font-bold tracking-tight text-white/70 hover:text-primary-fixed transition-colors duration-300" href="#">Science</a>
+<a class="font-headline font-bold tracking-tight text-white/70 hover:text-primary-fixed transition-colors duration-300" href="#">About</a>
+<button class="bg-primary-container text-on-primary-fixed px-6 py-2 rounded-md font-headline font-bold text-sm hover:scale-95 transition-transform duration-200">Join Waitlist</button>
+</div>
+</nav>
+<main class="relative min-h-[921px] flex flex-col justify-center overflow-hidden kinetic-grid">
+<!-- Hero Section Canvas -->
+<div class="relative w-full max-w-7xl mx-auto px-8 py-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Content Column -->
+<div class="lg:col-span-6 z-10 flex flex-col gap-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container border border-outline-variant/30 w-fit rounded-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label text-[0.6875rem] uppercase tracking-[0.1rem] text-primary-fixed">Early Access Phase 01</span>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter leading-[0.9] text-white">
+                    THE FUTURE <br/>OF <span class="text-primary-fixed text-glow">FLIGHT</span> IS <br/>ALMOST HERE.
+                </h1>
+<p class="font-body text-lg text-on-surface-variant max-w-md leading-relaxed">
+                    Advanced biomechanics for track and field. Track every millisecond. Perfect every phase. High-performance intelligence for elite jumpers.
+                </p>
+<!-- Waitlist Form -->
+<div class="flex flex-col gap-4 mt-4 w-full max-w-md">
+<div class="relative flex flex-col md:flex-row gap-2">
+<input class="w-full bg-surface-container-highest border-b-2 border-outline-variant/30 focus:border-primary-container focus:ring-0 text-white font-label placeholder:text-on-surface-variant/50 py-4 px-4 transition-all outline-none" placeholder="ENTER ATHLETE EMAIL" type="email"/>
+<button class="bg-primary-container text-on-primary-fixed font-headline font-black px-8 py-4 whitespace-nowrap hover:bg-primary-dim transition-colors active:scale-95 duration-200">
+                            GET EARLY ACCESS
+                        </button>
+</div>
+<p class="font-label text-[0.625rem] text-on-surface-variant/40 tracking-wider">SECURE YOUR POSITION IN THE KINETIC ELITE QUEUE.</p>
+</div>
+</div>
+<!-- Visualization Image Column -->
+<div class="lg:col-span-6 relative h-[500px] lg:h-[700px] w-full">
+<!-- Main Athlete Image -->
+<div class="absolute inset-0 z-0">
+<img alt="High jump athlete" class="w-full h-full object-cover grayscale opacity-60" data-alt="Cinematic shot of a professional high jump athlete mid-air at peak height, clear night stadium lighting, dramatic shadows, moisture in air" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfBjAl8Hw684PQeXmNQyfoQonKjhGFYlkJVK9d3Jx2Njm3x-ejVOOHXGI_v1IIVmstSrOXhQ76KvErSHMRAD29gAQe4XxeDK-7EdLG8TT9vkCsbVmRiMIoPra9C6nS9gHwiwS5OpVRX_5Ttd6i1b91Y3M0cvhtwuFH-ri7UMHNE3hUQAMOHmRMSGF9YOIivC0g_MIFF2aC5ZNhMazehQ_UBjoZDSlG4cAhSgqOnjdcqMxZSWUSUSmTusb2VVprz0I6FvgulF_lrWg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-transparent to-transparent lg:hidden"></div>
+</div>
+<!-- Data Visualization Overlays -->
+<div class="absolute inset-0 z-20 pointer-events-none">
+<!-- Arc Trajectory Widget -->
+<div class="absolute top-1/4 right-10 glass-overlay p-4 border-l-2 border-primary-container">
+<div class="font-label text-[0.6875rem] text-primary-fixed mb-1 uppercase tracking-tighter">Velocity Vector</div>
+<div class="font-headline text-3xl font-bold">9.82 <span class="text-xs font-normal">m/s</span></div>
+<svg class="w-full h-12 mt-2" viewbox="0 0 100 40">
+<path d="M0,35 Q50,0 100,35" fill="none" stroke="#cafd00" stroke-dasharray="4 2" stroke-width="1.5"></path>
+</svg>
+</div>
+<!-- Millisecond Timer Widget -->
+<div class="absolute bottom-1/3 left-10 glass-overlay p-4 border-l-2 border-secondary">
+<div class="font-label text-[0.6875rem] text-secondary mb-1 uppercase tracking-tighter">Ground Contact</div>
+<div class="font-headline text-3xl font-bold">0.124 <span class="text-xs font-normal">ms</span></div>
+<div class="flex gap-1 mt-2">
+<div class="h-1 w-full bg-secondary"></div>
+<div class="h-1 w-2/3 bg-secondary/30"></div>
+<div class="h-1 w-1/2 bg-secondary/30"></div>
+</div>
+</div>
+<!-- Biometric Node -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+<div class="relative">
+<div class="w-6 h-6 border border-primary-container rounded-full animate-ping absolute inset-0"></div>
+<div class="w-6 h-6 bg-primary-container/20 border border-primary-container rounded-full flex items-center justify-center">
+<div class="w-1.5 h-1.5 bg-primary-container rounded-full"></div>
+</div>
+<div class="absolute left-8 top-0 whitespace-nowrap">
+<span class="font-label text-[0.6rem] text-white/50 block">ANKLE ANGLE</span>
+<span class="font-headline font-bold text-primary-fixed">142.5°</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bento Grid Value Props -->
+<section class="w-full max-w-7xl mx-auto px-8 py-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Prop 1 -->
+<div class="bg-surface-container p-8 group hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary-fixed mb-6 text-3xl" data-icon="analytics" data-weight="fill">analytics</span>
+<h3 class="font-headline text-xl font-bold mb-3">BIOMECHANIC SENSING</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Proprietary AI models that decode your flight path from standard 4K video frames.</p>
+</div>
+<!-- Prop 2 -->
+<div class="bg-surface-container p-8 group hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary-fixed mb-6 text-3xl" data-icon="speed" data-weight="fill">speed</span>
+<h3 class="font-headline text-xl font-bold mb-3">PHASE ANALYSIS</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Breakdown of the approach, penultimate step, and take-off with millisecond precision.</p>
+</div>
+<!-- Prop 3 -->
+<div class="bg-surface-container p-8 group hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary-fixed mb-6 text-3xl" data-icon="trophy" data-weight="fill">trophy</span>
+<h3 class="font-headline text-xl font-bold mb-3">ELITE BENCHMARKING</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Compare your kinetic signature against world-class Olympic benchmarks.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Navigation Shell -->
+<footer class="bg-surface-container-lowest border-t border-white/10">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full max-w-7xl mx-auto gap-4">
+<div class="text-primary-fixed font-bold font-headline tracking-tighter">JUMPERS EDGE</div>
+<div class="text-white/40 font-label text-[0.6875rem] uppercase tracking-[0.1rem] text-center md:text-left">
+                © 2024 JUMPERS EDGE. HIGH-PERFORMANCE ATHLETIC INTELLIGENCE.
+            </div>
+<div class="flex gap-6">
+<a class="text-white/40 hover:text-white font-label text-[0.6875rem] uppercase tracking-[0.1rem] transition-colors" href="#">Instagram</a>
+<a class="text-white/40 hover:text-white font-label text-[0.6875rem] uppercase tracking-[0.1rem] transition-colors" href="#">Twitter</a>
+<a class="text-white/40 hover:text-white font-label text-[0.6875rem] uppercase tracking-[0.1rem] transition-colors" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+</body></html>
