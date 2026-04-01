@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="en"><head>
+<html class="dark" lang="en" style="scroll-behavior: smooth;"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>JUMPERS EDGE | Join The Kinetic Elite</title>
@@ -98,9 +98,9 @@
 <nav class="w-full top-0 left-0 z-50 flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
 <div class="text-2xl font-black text-primary-fixed tracking-tighter font-headline">JUMPERS EDGE</div>
 <div class="hidden md:flex gap-8 items-center">
-<a class="font-headline font-bold tracking-tight text-white/70 hover:text-primary-fixed transition-colors duration-300" href="#">Science</a>
-<a class="font-headline font-bold tracking-tight text-white/70 hover:text-primary-fixed transition-colors duration-300" href="#">About</a>
-<button class="bg-primary-container text-on-primary-fixed px-6 py-2 rounded-md font-headline font-bold text-sm hover:scale-95 transition-transform duration-200">Join Waitlist</button>
+<a class="font-headline font-bold tracking-tight text-white/70 hover:text-primary-fixed transition-colors duration-300" href="#science">Science</a>
+<a class="font-headline font-bold tracking-tight text-white/70 hover:text-primary-fixed transition-colors duration-300" href="#about">About</a>
+<a href="#waitlist-section" class="bg-primary-container text-on-primary-fixed px-6 py-2 rounded-md font-headline font-bold text-sm hover:scale-95 transition-transform duration-200 inline-block">Join Waitlist</a>
 </div>
 </nav>
 <main class="relative min-h-[921px] flex flex-col justify-center overflow-hidden kinetic-grid">
@@ -119,14 +119,22 @@
                     Advanced biomechanics for track and field. Track every millisecond. Perfect every phase. High-performance intelligence for elite jumpers.
                 </p>
 <!-- Waitlist Form -->
-<div class="flex flex-col gap-4 mt-4 w-full max-w-md">
-<div class="relative flex flex-col md:flex-row gap-2">
-<input class="w-full bg-surface-container-highest border-b-2 border-outline-variant/30 focus:border-primary-container focus:ring-0 text-white font-label placeholder:text-on-surface-variant/50 py-4 px-4 transition-all outline-none" placeholder="ENTER ATHLETE EMAIL" type="email"/>
-<button class="bg-primary-container text-on-primary-fixed font-headline font-black px-8 py-4 whitespace-nowrap hover:bg-primary-dim transition-colors active:scale-95 duration-200">
-                            GET EARLY ACCESS
-                        </button>
-</div>
-<p class="font-label text-[0.625rem] text-on-surface-variant/40 tracking-wider">SECURE YOUR POSITION IN THE KINETIC ELITE QUEUE.</p>
+<div id="waitlist-section" class="flex flex-col gap-4 mt-4 w-full max-w-md">
+  <form id="waitlist-form" novalidate>
+    <div class="relative flex flex-col md:flex-row gap-2">
+      <input id="waitlist-email" name="email" class="w-full bg-surface-container-highest border-b-2 border-outline-variant/30 focus:border-primary-container focus:ring-0 text-white font-label placeholder:text-on-surface-variant/50 py-4 px-4 transition-all outline-none" placeholder="ENTER ATHLETE EMAIL" type="email" required/>
+      <button id="waitlist-btn" type="submit" class="bg-primary-container text-on-primary-fixed font-headline font-black px-8 py-4 whitespace-nowrap hover:bg-primary-dim transition-colors active:scale-95 duration-200">
+        GET EARLY ACCESS
+      </button>
+    </div>
+    <p id="waitlist-error" class="hidden font-label text-[0.6875rem] tracking-wider mt-2" style="color:#ff7351;"></p>
+    <p class="font-label text-[0.625rem] text-on-surface-variant/40 tracking-wider mt-2">SECURE YOUR POSITION IN THE KINETIC ELITE QUEUE.</p>
+  </form>
+  <div id="waitlist-success" class="hidden flex flex-col gap-3 py-5 px-6 border-l-2 border-primary-container" style="background:rgba(202,253,0,0.06);">
+    <span class="font-label text-[0.6875rem] uppercase tracking-[0.1rem] text-primary-fixed">Access Granted</span>
+    <p class="font-headline text-xl font-bold text-white leading-tight">YOU'RE IN THE QUEUE.<br/>WE'LL BE IN TOUCH.</p>
+    <p class="font-body text-sm text-on-surface-variant">Keep an eye on your inbox — early access invites go out in waves.</p>
+  </div>
 </div>
 </div>
 <!-- Visualization Image Column -->
@@ -174,7 +182,7 @@
 </div>
 </div>
 <!-- Bento Grid Value Props -->
-<section class="w-full max-w-7xl mx-auto px-8 py-20">
+<section id="science" class="w-full max-w-7xl mx-auto px-8 py-20">
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 <!-- Prop 1 -->
 <div class="bg-surface-container p-8 group hover:bg-surface-container-high transition-colors">
@@ -197,6 +205,24 @@
 </div>
 </section>
 </main>
+<!-- About Section -->
+<section id="about" class="w-full max-w-7xl mx-auto px-8 py-24">
+  <div class="bg-surface-container p-12 md:p-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div class="flex flex-col gap-4">
+      <div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high border border-outline-variant/30 w-fit rounded-sm">
+        <span class="w-2 h-2 rounded-full bg-secondary"></span>
+        <span class="font-label text-[0.6875rem] uppercase tracking-[0.1rem] text-secondary">The Mission</span>
+      </div>
+      <h2 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tighter leading-[0.95] text-white">BUILT FOR<br/><span class="text-primary-fixed">ATHLETES,</span><br/>NOT LABS.</h2>
+    </div>
+    <div class="flex flex-col gap-5 text-on-surface-variant font-body text-base leading-relaxed">
+      <p>JumpersEdge brings elite-level biomechanics analysis out of university research labs and puts it in the hands of every track and field athlete. No expensive motion-capture suits. No PhD required.</p>
+      <p>Point your phone. Jump. Get instant, data-driven feedback on your approach velocity, penultimate step mechanics, and take-off angle — all benchmarked against world-class standards.</p>
+      <p class="text-primary-fixed font-label text-sm uppercase tracking-wider">Currently in early access. iOS launch coming soon.</p>
+    </div>
+  </div>
+</section>
+
 <!-- Footer Navigation Shell -->
 <footer class="bg-surface-container-lowest border-t border-white/10">
 <div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full max-w-7xl mx-auto gap-4">
@@ -211,4 +237,50 @@
 </div>
 </div>
 </footer>
+<script>
+  const form = document.getElementById('waitlist-form');
+  const btn = document.getElementById('waitlist-btn');
+  const emailInput = document.getElementById('waitlist-email');
+  const errorMsg = document.getElementById('waitlist-error');
+  const successDiv = document.getElementById('waitlist-success');
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    errorMsg.classList.add('hidden');
+
+    const email = emailInput.value.trim();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      errorMsg.textContent = 'PLEASE ENTER A VALID EMAIL ADDRESS.';
+      errorMsg.classList.remove('hidden');
+      return;
+    }
+
+    btn.textContent = 'JOINING...';
+    btn.disabled = true;
+    btn.style.opacity = '0.7';
+
+    try {
+      const res = await fetch('https://formspree.io/f/mojpwgjb', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email })
+      });
+
+      if (res.ok) {
+        form.classList.add('hidden');
+        successDiv.classList.remove('hidden');
+        successDiv.classList.add('flex');
+      } else {
+        throw new Error('Server error');
+      }
+    } catch (err) {
+      errorMsg.textContent = 'SOMETHING WENT WRONG. PLEASE TRY AGAIN.';
+      errorMsg.classList.remove('hidden');
+      btn.textContent = 'GET EARLY ACCESS';
+      btn.disabled = false;
+      btn.style.opacity = '1';
+    }
+  });
+</script>
 </body></html>
